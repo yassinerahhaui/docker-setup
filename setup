@@ -3,11 +3,9 @@ git config --global user.name yassinerahhaui
 
 mkdir ~/Workspace
 
-echo "exec zsh\n$(cat ~/.bashrc)" > ~/.bashrc
-
 curl -fsSL https://get.docker.com/rootless | sh
 export
 
 echo "export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH\n$(cat ~/.zshrc)" > ~/.zshrc
+echo "exec zsh\n$(cat ~/.bashrc)" > ~/.bashrc
 
-/home/yrahhaou/install.sh -n
